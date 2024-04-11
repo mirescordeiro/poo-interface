@@ -19,6 +19,31 @@ public class Main {
         rectangle.calcArea();
         rectangle.printArea();
 
+        /*
+        * PARTE 2
+        * Implementar as classes e interfaces a seguir. Cada uma das classes terá a sua
+        * forma de cálculo de salário. Desafio: Professor também é Colaborador.
+        *
+        * Interface Colaborador:
+        * Métodos obtemSalario e cargaHoraria.
+        * Contém uma propriedade float estática correspondente ao valor base da hora.
+        *
+        * Interface Professor:
+        * Método obtemTitulacao : serve de base para o adicional
+        * Graduação : sem adicional
+        * Mestrado : adicional de 20%
+        * Doutorado : adicional de 50%
+        *
+        * Observação: os metodos anteriores possuem propriedades associadas (carga horaria e titulação),
+        * que deverão ser criadas, bem como formas para definir os valores das mesmas
+        * (via metodos normais ou construtores)
+        *
+        * Classes:
+        * Estagiario (implementa Colaborador) ? salário = cargaHoraria * valor base
+        * Funcionario (implementa Colaborador) ? salário = cargaHoraria * valor base * 2
+        * ProfessorTecnico (implementa Professor) ? salário = cargaHoraria * valorBase * 3 * adicional pela titulacao
+        * ProfessorGraduacao (implementa Professor)? salário = cargaHoraria * valorBase * 4 * adicional pela titulação
+        */
 
         Estagiario stag = new Estagiario();
         stag.obtemSalario(120, 10);
@@ -33,7 +58,9 @@ public class Main {
         teacher.obtemSalario(160, 25);
         teacher.printSalario();
 
-
-
+        ProfessorGraduacao teachergrad = new ProfessorGraduacao();
+        teachergrad.obtemTitulacao("mestrado");
+        teachergrad.obtemSalario(160, 35);
+        teachergrad.printSalario();
     }
 }
