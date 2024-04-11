@@ -28,5 +28,12 @@ public class Main {
         officer.obtemSalario(160, 15);
         officer.printSalario();
 
+        ProfessorTecnico teacher = new ProfessorTecnico();
+        teacher.obtemTitulacao("graduação");
+        teacher.obtemSalario(160, 25);
+        teacher.printSalario();
+
+
+
     }
 }
