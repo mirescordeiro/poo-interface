@@ -24,7 +24,9 @@ public class Main {
         stag.obtemSalario(120, 10);
         stag.printSalario();
 
-
+        Funcionario officer = new Funcionario();
+        officer.obtemSalario(160, 15);
+        officer.printSalario();
 
     }
 }
