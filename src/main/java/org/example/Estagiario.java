@@ -7,6 +7,9 @@ public class Estagiario implements Colaborador{
         return salario;
     }
 
+    public Estagiario() {
+    }
+
     @Override
     public void obtemSalario(int cargaHoraria, float valorBaseHora) {
         this.salario = cargaHoraria * valorBaseHora;

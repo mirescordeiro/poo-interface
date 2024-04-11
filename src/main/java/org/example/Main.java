@@ -20,6 +20,10 @@ public class Main {
         rectangle.printArea();
 
 
+        Estagiario stag = new Estagiario();
+        stag.obtemSalario(120, 10);
+        stag.printSalario();
+
 
 
     }
